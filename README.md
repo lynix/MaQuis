@@ -29,15 +29,19 @@ Make sure you have the following requirements installed:
 
 The code is supplied as *qmake* project so either use QtCreator or compile
 manually:
-    $ qmake MaQuis.pro -r -spec linux-g++
-    $ make -j4
+```
+$ qmake MaQuis.pro -r -spec linux-g++
+$ make -j4
+```
 
 There currently is no installation mechanism, the binary is located in *bin/*.
 
 ## Usage
 
 Just run the binary with files or folders as arguments:
-    $ ./MaQuis /path/to/some/images /images/img1.jpeg /images/img2.jpg
+```
+$ ./MaQuis /path/to/some/images /images/img1.jpeg /images/img2.jpg
+```
 
 Functionality of the main (and only) window should be self-explanatory. You may
 use the following vim-style bindings:
