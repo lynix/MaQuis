@@ -1,5 +1,8 @@
 Maquis
 *.o
 *.user
+.qmake.stash
+Makefile
+bin/
 moc_*.cpp
 ui_*.h
