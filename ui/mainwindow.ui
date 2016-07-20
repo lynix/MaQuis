@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>889</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MaQuis</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>File</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="btnFilePrev">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Previous</string>
+           </property>
+           <property name="icon">
+            <iconset theme="go-previous">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnFileNext">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Next</string>
+           </property>
+           <property name="icon">
+            <iconset theme="go-next">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnFileReload">
+           <property name="font">
+            <font>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Reload</string>
+           </property>
+           <property name="icon">
+            <iconset theme="view-refresh">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>Rotate</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPushButton" name="btnImgRotLeft">
+           <property name="font">
+            <font>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Left 90°</string>
+           </property>
+           <property name="icon">
+            <iconset theme="object-rotate-left">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnImgRotFlip">
+           <property name="font">
+            <font>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>180°</string>
+           </property>
+           <property name="icon">
+            <iconset theme="object-flip-vertical">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnImgRotRight">
+           <property name="font">
+            <font>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Right 90°</string>
+           </property>
+           <property name="icon">
+            <iconset theme="object-rotate-right">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>EXIF Timestamp</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QDateTimeEdit" name="dateTimeEdit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnExifSave">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Save</string>
+           </property>
+           <property name="icon">
+            <iconset theme="document-save">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="backgroundBrush">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>127</red>
+         <green>127</green>
+         <blue>127</blue>
+        </color>
+       </brush>
+      </property>
+      <property name="renderHints">
+       <set>QPainter::Antialiasing|QPainter::HighQualityAntialiasing|QPainter::TextAntialiasing</set>
+      </property>
+      <property name="dragMode">
+       <enum>QGraphicsView::ScrollHandDrag</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

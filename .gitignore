@@ -1,0 +1,5 @@
+Maquis
+*.o
+*.user
+moc_*.cpp
+ui_*.h
