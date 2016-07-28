@@ -4,6 +4,8 @@
 
 Copyright 2016 by Alexander Koch
 
+![](https://github.com/lynix/MaQuis/blob/master/screenshot.png)
+
 
 ## About
 
@@ -14,8 +16,6 @@ photographs in one utility:
 * rename according to timestamp
 
 It uses *libjpeg-turbo* for JPEG rotation and *exiv2* for EXIF manipulation.
-
-TODO: Insert screenshot here
 
 
 ## Building
